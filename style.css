@@ -317,7 +317,7 @@ section {
   border-radius: 30px;
   overflow: hidden;
   box-shadow: var(--shadow);
-  min-height: 520px;
+  min-height: 420px;
   background: #f0e4e4;
 }
 
