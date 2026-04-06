@@ -656,7 +656,7 @@ section {
 }
 @media (max-width: 900px) {
   .map-box {
-    height: 55px;
+    height: 300px;
   }
 }
 .whatsapp-float {
