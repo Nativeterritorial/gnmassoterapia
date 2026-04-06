@@ -821,8 +821,17 @@ section {
   .map-box {
     height: 300px;
   }
-p {
+
+.hero-description,
+.about-content p,
+.section-title p,
+.benefits-content p,
+.difference-card p,
+.local-seo-box p,
+.cta-box p,
+.map-text p {
   text-align: justify;
+  text-justify: inter-word;
 }
 
 
