@@ -760,12 +760,6 @@ section {
   position: relative;
   z-index: 1;
 }
-
-@media (max-width: 900px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-
   .hero-image-card video {
   width: 100%;
   height: 100%;
@@ -773,4 +767,10 @@ section {
   display: block;
   border-radius: inherit;
 }
+@media (max-width: 900px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+
 
