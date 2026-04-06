@@ -250,7 +250,10 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow);
   background: #f3e8e8;
-  height: 520px;
+  height: 380px;
+  max-width: 480px;
+  margin-left: auto;
+
 }
 
 .hero-image-card img,
