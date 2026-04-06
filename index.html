@@ -1,21 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gabriela Nadal | Massoterapia em Veranópolis, RS</title>
-  <meta name="description" content="Gabriela Nadal oferece massoterapia, liberação miofascial e acupuntura em Veranópolis, RS. Atendimento com foco em alívio da dor, bem-estar e recuperação corporal." />
+  <meta name="description" content="Gabriela Nadal é enfermeira e massoterapeuta em Veranópolis, RS. Atendimento com foco em alívio da dor, bem-estar, liberação miofascial e acupuntura." />
   <meta name="keywords" content="massoterapia em Veranópolis, liberação miofascial em Veranópolis, acupuntura em Veranópolis, Gabriela Nadal, massoterapeuta Veranópolis" />
   <meta name="author" content="Gabriela Nadal" />
+
+  <meta property="og:title" content="Gabriela Nadal | Massoterapia em Veranópolis, RS" />
+  <meta property="og:description" content="Atendimento com foco em alívio da dor, bem-estar, liberação miofascial e acupuntura." />
+  <meta property="og:type" content="website" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="header">
     <div class="container nav">
-      <div class="logo">Gabriela Nadal</div>
+      <a href="#topo" class="brand" aria-label="Gabriela Nadal">
+        <img src="logo.png" alt="Gabriela Nadal Massoterapeuta" class="logo-img" />
+      </a>
 
       <input type="checkbox" id="menu-toggle" class="menu-toggle" />
       <label for="menu-toggle" class="menu-icon" aria-label="Abrir menu">
@@ -31,69 +39,93 @@
           <li><a href="#beneficios">Benefícios</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
-        <a class="btn btn-outline" href="https://wa.me/5554999820508" target="_blank">Agendar</a>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/5554999820508?text=Olá%2C%20quero%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
+          Agendar atendimento
+        </a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="topo">
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
-          <span class="tag">Veranópolis, RS</span>
-          <h1>Massoterapia premium para aliviar dores, tensões e restaurar seu bem-estar</h1>
-          <p>
-            Atendimento com foco em cuidado individual, alívio muscular e recuperação do corpo
-            através de técnicas como massoterapia, liberação miofascial e acupuntura.
+          <span class="eyebrow">Veranópolis, RS</span>
+          <h1>Cuidado para aliviar tensões, dores e devolver bem-estar ao seu corpo</h1>
+          <p class="hero-description">
+            Atendimento individual com foco em escuta, técnica e atenção aos detalhes, unindo massoterapia,
+            liberação miofascial e acupuntura para promover alívio, equilíbrio e qualidade de vida.
           </p>
 
           <div class="hero-buttons">
-            <a class="btn" href="https://wa.me/5554999820508?text=Olá%2C%20quero%20agendar%20um%20atendimento." target="_blank">
+            <a class="btn btn-primary" href="https://wa.me/5554999820508?text=Olá%2C%20quero%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
               Agendar pelo WhatsApp
             </a>
             <a class="btn btn-secondary" href="#servicos">Conhecer serviços</a>
           </div>
+
+          <div class="hero-highlights">
+            <div class="highlight-item">
+              <strong>Atendimento individual</strong>
+              <span>Cuidado personalizado para cada necessidade</span>
+            </div>
+            <div class="highlight-item">
+              <strong>Foco em bem-estar</strong>
+              <span>Mais leveza, mobilidade e alívio no dia a dia</span>
+            </div>
+          </div>
         </div>
 
-        <div class="hero-card">
-          <div class="hero-card-inner">
-            <p class="mini-title">Atendimento em Veranópolis</p>
-            <h2>Gabriela Nadal</h2>
-            <p>
-              Cuidado corporal com abordagem profissional, ambiente acolhedor e atenção aos detalhes.
-            </p>
-            <ul>
-              <li>Massoterapia</li>
-              <li>Liberação miofascial</li>
-              <li>Acupuntura</li>
-            </ul>
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="hero.jpg" alt="Gabriela Nadal realizando atendimento de massoterapia" />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="pain-points">
-      <div class="container">
-        <div class="section-title">
-          <span class="section-tag">Para quem é</span>
-          <h2>Se o seu corpo pede alívio, esse atendimento é para você</h2>
+    <section class="intro-band">
+      <div class="container intro-band-grid">
+        <div class="intro-band-text">
+          <span class="section-tag">Atendimento em Veranópolis</span>
+          <h2>Uma abordagem que une cuidado, técnica e presença</h2>
           <p>
-            Muitas dores do dia a dia se acumulam no corpo e afetam energia, mobilidade e qualidade de vida.
+            O atendimento é pensado para quem sente o corpo sobrecarregado, convive com tensões acumuladas
+            ou busca um momento de cuidado real, com atenção individual e um olhar mais completo para o bem-estar.
           </p>
         </div>
 
-        <div class="cards">
-          <div class="card">
-            <h3>Dores musculares</h3>
-            <p>Tensão nas costas, pescoço, lombar, ombros ou pernas.</p>
-          </div>
-          <div class="card">
-            <h3>Estresse e sobrecarga</h3>
-            <p>Corpo pesado, mente cansada e sensação constante de desgaste.</p>
-          </div>
-          <div class="card">
-            <h3>Limitação de movimento</h3>
-            <p>Rigidez, desconforto e dificuldade para se movimentar com liberdade.</p>
+        <div class="intro-band-card">
+          <p>Massoterapia</p>
+          <p>Liberação Miofascial</p>
+          <p>Acupuntura</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img src="detalhe.jpg" alt="Detalhe de atendimento de massoterapia" />
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">Sobre Gabriela Nadal</span>
+          <h2>Atendimento com sensibilidade, formação na área da saúde e atenção aos detalhes</h2>
+          <p>
+            Gabriela Nadal é enfermeira e massoterapeuta, pós-graduanda em acupuntura, com atuação voltada
+            ao cuidado corporal, alívio de tensões e promoção do bem-estar.
+          </p>
+          <p>
+            Seu atendimento combina conhecimento técnico, terapias manuais e escuta individual,
+            buscando entender cada necessidade para oferecer uma experiência mais acolhedora e eficaz.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">Enfermeira</div>
+            <div class="about-point">Massoterapeuta</div>
+            <div class="about-point">Pós-graduanda em Acupuntura</div>
+            <div class="about-point">Terapias manuais e liberação miofascial</div>
           </div>
         </div>
       </div>
@@ -103,92 +135,112 @@
       <div class="container">
         <div class="section-title">
           <span class="section-tag">Serviços</span>
-          <h2>Atendimentos focados em dor, recuperação e bem-estar</h2>
+          <h2>Atendimentos pensados para aliviar o corpo e promover mais equilíbrio</h2>
+          <p>
+            Cada técnica é aplicada conforme a necessidade de cada pessoa, respeitando o momento do corpo e o objetivo do atendimento.
+          </p>
         </div>
 
-        <div class="cards">
-          <div class="card service-card">
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-number">01</div>
             <h3>Massoterapia</h3>
             <p>
-              Atendimento voltado para relaxamento, alívio de tensões e melhora do bem-estar físico e mental.
+              Atendimento voltado para relaxamento, redução de tensões e sensação de bem-estar,
+              ajudando o corpo a sair do estado de sobrecarga do dia a dia.
             </p>
-          </div>
+          </article>
 
-          <div class="card service-card">
+          <article class="service-card">
+            <div class="service-number">02</div>
             <h3>Liberação Miofascial</h3>
             <p>
-              Técnica indicada para aliviar tensões profundas, melhorar a mobilidade e reduzir pontos de dor.
+              Técnica indicada para trabalhar pontos de tensão, desconfortos musculares e limitações de movimento,
+              contribuindo para mais mobilidade e alívio.
             </p>
-          </div>
+          </article>
 
-          <div class="card service-card">
+          <article class="service-card">
+            <div class="service-number">03</div>
             <h3>Acupuntura</h3>
             <p>
-              Método terapêutico que auxilia no equilíbrio do corpo, alívio de dores e recuperação funcional.
+              Recurso terapêutico utilizado para favorecer equilíbrio, reduzir dores e auxiliar no cuidado do corpo
+              de forma integrada.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
     <section id="beneficios" class="benefits">
       <div class="container benefits-grid">
-        <div>
+        <div class="benefits-content">
           <span class="section-tag">Benefícios</span>
-          <h2>Mais leveza, menos dor e mais qualidade de vida</h2>
+          <h2>Mais leveza para a rotina e mais atenção ao que o seu corpo pede</h2>
           <p>
-            O objetivo do atendimento é ajudar você a se sentir melhor de forma real, percebendo diferença no corpo e na rotina.
+            O objetivo do atendimento é fazer você perceber diferença real no corpo e no dia a dia,
+            com mais conforto, relaxamento e bem-estar.
           </p>
         </div>
 
-        <div class="benefit-list">
-          <div class="benefit-item">Alívio de dores e tensões musculares</div>
-          <div class="benefit-item">Melhora da mobilidade e flexibilidade</div>
-          <div class="benefit-item">Redução do estresse e da sobrecarga corporal</div>
-          <div class="benefit-item">Sensação de leveza e bem-estar após o atendimento</div>
+        <div class="benefits-list">
+          <div class="benefit-item">Alívio de tensões musculares</div>
+          <div class="benefit-item">Redução de dores e desconfortos</div>
+          <div class="benefit-item">Melhora da mobilidade corporal</div>
+          <div class="benefit-item">Mais relaxamento e sensação de leveza</div>
+          <div class="benefit-item">Momento de cuidado e pausa na rotina</div>
+          <div class="benefit-item">Atendimento mais individualizado</div>
         </div>
       </div>
     </section>
 
-    <section id="sobre" class="about">
-      <div class="container about-grid">
-        <div class="about-box"></div>
-        <div>
-          <span class="section-tag">Sobre</span>
-          <h2>Atendimento com cuidado, atenção e proposta premium</h2>
+    <section class="difference">
+      <div class="container difference-grid">
+        <div class="difference-card">
+          <span class="section-tag">Diferencial</span>
+          <h2>Um atendimento mais humano, cuidadoso e pensado para você</h2>
           <p>
-            Gabriela Nadal é enfermeira e massoterapeuta, pós-graduanda em Acupuntura, com formação em
-            terapias manuais e liberação miofascial. Atende em Veranópolis, RS, com foco em proporcionar
-            alívio da dor, relaxamento e recuperação corporal através de técnicas terapêuticas aplicadas com atenção individual.
+            Mais do que uma sessão, a proposta é oferecer uma experiência de cuidado com atenção,
+            presença e olhar individual para cada necessidade.
           </p>
-          <p>
-            A proposta é unir técnica, sensibilidade e um atendimento mais exclusivo para quem valoriza cuidado de verdade.
-          </p>
+        </div>
+
+        <div class="difference-list">
+          <div class="difference-item">
+            <h3>Escuta e atenção</h3>
+            <p>Entender o que o corpo está mostrando faz parte do processo de cuidado.</p>
+          </div>
+          <div class="difference-item">
+            <h3>Técnica com sensibilidade</h3>
+            <p>Aplicação cuidadosa, respeitando cada pessoa, sua rotina e seu momento.</p>
+          </div>
+          <div class="difference-item">
+            <h3>Ambiente acolhedor</h3>
+            <p>Um espaço pensado para transmitir tranquilidade, conforto e confiança.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="local-seo">
-      <div class="container">
-        <div class="section-title">
-          <span class="section-tag">Atendimento local</span>
-          <h2>Massoterapia em Veranópolis, RS</h2>
-          <p>
-            Se você procura <strong>massoterapia em Veranópolis</strong>, <strong>liberação miofascial em Veranópolis</strong> ou
-            <strong>acupuntura em Veranópolis</strong>, entre em contato para agendar seu atendimento.
-          </p>
-        </div>
+      <div class="container local-seo-box">
+        <span class="section-tag">Atendimento local</span>
+        <h2>Massoterapia em Veranópolis, RS</h2>
+        <p>
+          Se você procura <strong>massoterapia em Veranópolis</strong>, <strong>liberação miofascial em Veranópolis</strong> ou
+          <strong>acupuntura em Veranópolis</strong>, entre em contato para agendar seu atendimento com Gabriela Nadal.
+        </p>
       </div>
     </section>
 
     <section class="cta">
       <div class="container cta-box">
         <span class="section-tag">Agendamento</span>
-        <h2>Agende seu atendimento e sinta a diferença no seu corpo</h2>
+        <h2>Agende seu atendimento e cuide melhor do seu corpo</h2>
         <p>
-          Clique no botão abaixo e fale diretamente no WhatsApp.
+          Fale diretamente pelo WhatsApp para tirar dúvidas e marcar seu horário.
         </p>
-        <a class="btn" href="https://wa.me/5554999820508?text=Olá%2C%20quero%20agendar%20um%20atendimento." target="_blank">
+        <a class="btn btn-primary" href="https://wa.me/5554999820508?text=Olá%2C%20quero%20agendar%20um%20atendimento." target="_blank" rel="noopener noreferrer">
           Falar no WhatsApp
         </a>
       </div>
@@ -196,18 +248,28 @@
   </main>
 
   <footer id="contato" class="footer">
-    <div class="container footer-content">
-      <div>
-        <h3>Gabriela Nadal</h3>
-        <p>Massoterapia &#8226; Liberação Miofascial &#8226; Acupuntura</p>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="logo.png" alt="Gabriela Nadal Massoterapeuta" class="footer-logo" />
+        <p>
+          Atendimento com foco em bem-estar, alívio da dor e cuidado corporal em Veranópolis, RS.
+        </p>
+      </div>
+
+      <div class="footer-info">
+        <h3>Contato</h3>
+        <p><a href="https://wa.me/5554999820508" target="_blank" rel="noopener noreferrer">(54) 99982-0508</a></p>
+        <p><a href="https://instagram.com/gn_massoterapeuta" target="_blank" rel="noopener noreferrer">@gn_massoterapeuta</a></p>
         <p>Veranópolis, RS</p>
       </div>
 
-      <div class="footer-contact">
-        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5554999820508" target="_blank">(54) 99982-0508</a></p>
-        <p><strong>Instagram:</strong> <a href="https://instagram.com/gn_massoterapeuta" target="_blank">@gn_massoterapeuta</a></p>
+      <div class="footer-info">
+        <h3>Serviços</h3>
+        <p>Massoterapia</p>
+        <p>Liberação Miofascial</p>
+        <p>Acupuntura</p>
       </div>
     </div>
   </footer>
 </body>
-          </html>
+</html>
