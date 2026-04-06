@@ -65,11 +65,12 @@ a {
 }
 
 .nav {
-  min-height: 88px;
+  min-height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+}
 }
 
 .brand {
@@ -78,7 +79,7 @@ a {
 }
 
 .logo-img {
-  height: 100px;
+  height: 90px;
   width: auto;
 }
 
