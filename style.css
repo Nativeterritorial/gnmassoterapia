@@ -250,7 +250,7 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow);
   background: #f3e8e8;
-  height: 380px;
+  height: 520px;
 }
 
 .hero-image-card img,
@@ -755,7 +755,7 @@ section {
 
 @media (max-width: 900px) {
   .hero-image-card {
-    height: 240px;
+    height: 340px;
   }
 
   .map-grid {
