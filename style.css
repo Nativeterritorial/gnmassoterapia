@@ -271,8 +271,9 @@ p {
   overflow: hidden;
   box-shadow: var(--shadow);
   background: #f3e8e8;
-  height: 420px;
-  max-width: 500px;
+  aspect-ratio: 4 / 5;
+  max-width: 560px;
+  width: 100%;
   margin-left: auto;
 }
 
@@ -746,7 +747,7 @@ section {
   }
 
   .hero-image-card {
-    height: 340px;
+    aspect-ratio: 16 / 10;
     max-width: none;
     margin-left: 0;
   }
@@ -849,7 +850,7 @@ section {
   }
 
   .hero-image-card {
-    height: 240px;
+    aspect-ratio: 4 / 3;
   }
 
   .intro-band-grid,
