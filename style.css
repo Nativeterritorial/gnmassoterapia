@@ -177,7 +177,7 @@ p {
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;
   gap: 48px;
-  align-items: center;
+  align-items: start;
 }
 
 .eyebrow,
