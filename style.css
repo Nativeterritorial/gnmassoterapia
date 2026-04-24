@@ -170,14 +170,40 @@ p {
 }
 
 .hero {
-  padding: 54px 0 56px;
+  position: relative;
+  min-height: 88vh;
+  padding: 120px 0 110px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
 }
 
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 48px;
-  align-items: start;
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(30, 15, 20, 0.30) 0%, rgba(30, 15, 20, 0.55) 60%, rgba(30, 15, 20, 0.75) 100%),
+    linear-gradient(90deg, rgba(30, 15, 20, 0.55) 0%, rgba(30, 15, 20, 0.15) 55%, rgba(30, 15, 20, 0.0) 100%);
+  z-index: -1;
+}
+
+.hero-inner {
+  width: min(1140px, 92%);
+}
+
+.hero-text {
+  max-width: 720px;
+  color: #fff;
 }
 
 .eyebrow,
@@ -199,14 +225,55 @@ p {
   font-family: var(--font-heading);
   font-size: clamp(2.7rem, 5vw, 4.6rem);
   line-height: 1.02;
-  color: var(--title);
+  color: #fff;
   margin-bottom: 20px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
 }
 
 .hero-description {
   font-size: 1.04rem;
   max-width: 620px;
-  color: var(--text-soft);
+  color: rgba(255, 255, 255, 0.92);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+}
+
+.hero .eyebrow {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.hero .proof-chip {
+  background: rgba(255, 255, 255, 0.14);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.hero .highlight-item {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(8px);
+}
+
+.hero .highlight-item strong {
+  color: #fff;
+}
+
+.hero .highlight-item span {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero .btn-secondary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.75);
 }
 
 .hero-proofbar {
@@ -770,7 +837,6 @@ section {
 }
 
 @media (max-width: 1000px) {
-  .hero-grid,
   .intro-band-grid,
   .about-grid,
   .benefits-grid,
